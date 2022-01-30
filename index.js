@@ -6,7 +6,7 @@ require("dotenv").config();
 
 app.use(
   cors({
-    origin: "",
+    origin: process.env.FE_URL,
   })
 );
 
@@ -16,6 +16,6 @@ app.get("/", (_, res) => {
   res.send(`Simple api for serving ML model.`);
 });
 
-app.listen(PORT, () =>
+app.listen(process.env.PORT, () =>
   console.log(`Server listening on port: ${process.env.PORT}`)
 );
