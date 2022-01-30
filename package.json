@@ -1,5 +1,5 @@
 {
-  "name": "ml-server",
+  "name": "ml-sem-server-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
