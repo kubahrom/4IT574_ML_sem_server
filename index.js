@@ -6,7 +6,7 @@ require("dotenv").config();
 
 app.use(
   cors({
-    origin: process.env.FE_URL,
+    origin: process.env.FE_URL || "*",
   })
 );
 
